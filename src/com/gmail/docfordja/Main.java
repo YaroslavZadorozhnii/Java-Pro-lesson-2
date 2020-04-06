@@ -48,7 +48,7 @@ public class Main {
 							int one = (int)  methods[j].getAnnotation(MyAnotation.class).a();
 							int two = (int)  methods[j].getAnnotation(MyAnotation.class).b();
                         	System.out.println(methods[j].getName() + " ( " + "@a: " + one + " , " + "@b: " +
-							two + " ) " + " = " + (Integer)methods[j].invoke(null, one, two));
+							two + " ) " + " = " + (int)methods[j].invoke(null, one, two));
 						} catch (IllegalAccessException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
